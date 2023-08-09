@@ -1,2 +1,0 @@
-# JavaScript_Practice
-## ฝึกๆ
