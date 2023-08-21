@@ -5,5 +5,5 @@ function countTrue(arr) {
         return arr.filter( bo == true).length
     }
 }
-
+//Test
 console.log(countTrue([false, false, true, true, false, false, false, true, true, true, true, false, true, true, false]))

@@ -7,7 +7,7 @@ function toCamelCase(str){
     return result
 }
 
-
+//Test
 console.log(toCamelCase("the_stealth_warrior")) 
 console.log(toCamelCase("The-Stealth-Warrior")) 
 console.log(toCamelCase("A-B-C")) 
