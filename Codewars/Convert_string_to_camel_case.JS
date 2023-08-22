@@ -11,3 +11,4 @@ function toCamelCase(str){
 console.log(toCamelCase("the_stealth_warrior")) 
 console.log(toCamelCase("The-Stealth-Warrior")) 
 console.log(toCamelCase("A-B-C")) 
+console.log(toCamelCase("Joe_bloggs"))
