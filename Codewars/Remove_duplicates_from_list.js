@@ -9,7 +9,6 @@ function distinct(a) {
   }
 
 //Test
-console.log(distinct([1])) 
 console.log(distinct([1,2])) 
 console.log(distinct([1,1,2])) 
 console.log(distinct([1,1,2,1,1,2])) 
