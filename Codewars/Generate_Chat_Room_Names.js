@@ -1,14 +1,9 @@
 function generateChatRoomNames(users) {
-    let arr = []
+    let arr = users.map((element) => element.split(" ")).flat()
     let fName = []
     let lName = []
     let lName2 = []
     let result = []
-    for(let i = 0 ; i < users.length ; i++){
-        arr.push(users[i].split(" "))
-    }
-    arr = arr.flat()
- 
     for(let i = 0 ; i < arr.length ; i += 2){
         fName.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase())
     }
