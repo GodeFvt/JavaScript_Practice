@@ -1,0 +1,22 @@
+{
+  "name": "test-demo",
+  "version": "1.0.0",
+  "description": "This is a demo practice to make students having experiences before a real exam in Github Classroom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INT201-demo-org/test-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INT201-demo-org/test-demo/issues"
+  },
+  "homepage": "https://github.com/INT201-demo-org/test-demo#readme",
+  "dependencies": {
+    "jest": "^29.6.2"
+  }
+}
