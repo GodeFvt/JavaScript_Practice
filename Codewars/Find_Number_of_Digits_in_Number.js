@@ -1,6 +1,6 @@
 //ไม่ใช้ toString
 function num_of_digits(num) {
-	if (num === 0) {
+  if (num === 0) {
     return 1;
   }
   let count = 0;
@@ -12,8 +12,8 @@ function num_of_digits(num) {
   return count;
 }
 
-//Test 
-console.log(num_of_digits(13124))
-console.log(num_of_digits(-12381428))
-console.log(num_of_digits(1000000000))
-console.log(num_of_digits(-2147483647))
+//Test
+console.log(num_of_digits(13124));
+console.log(num_of_digits(-12381428));
+console.log(num_of_digits(1000000000));
+console.log(num_of_digits(-2147483647));
