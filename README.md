@@ -1,0 +1,2 @@
+# JavaScript_Practice
+ฝึกๆๆๆๆ
