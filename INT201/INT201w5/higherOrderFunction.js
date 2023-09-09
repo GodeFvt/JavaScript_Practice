@@ -22,7 +22,7 @@ console.log(doSomething('Hey', toUpper))
 console.log(doSomething('Hey', reverse))
 //doIt is a higher order function because it return a function as a result
 const doIt = function () {  
-    return concat //!== return concat('1', '2')
+    return concat // !== return concat('1', '2')
 }
 const x = doIt()
 console.log(typeof x) //function
