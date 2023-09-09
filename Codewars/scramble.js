@@ -2,13 +2,14 @@ function scramble(str1, str2) {
   str1 = str1.split("");
   str2 = str2.split("");
   for (let i = 0; i < str2.length; i++) {
-    if (str1.find((el) => el === [...str2]) === undefined) {
+    if (str1.find((el) => el === str2[i]) === undefined) {
       return false;
     }
     str1[str1.findIndex((el) => el === str2[i])] = " ";
   }
   return true;
 }
+
 function scramble2(str1, str2) {
   const charCount = {};
   for (const char of str1) {
@@ -22,4 +23,4 @@ function scramble2(str1, str2) {
   }
   return true;
 }
-console.log(scramble("scriptjavx", "javascript"));
+console.log(scramble("javascript", "javascript"));
