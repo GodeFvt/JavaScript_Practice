@@ -2,7 +2,7 @@ function countTrue(arr) {
   if (arr.length == 0) {
     return 0;
   } else {
-    return arr.filter(bo == true).length;
+    return arr.filter((bo) => bo == true).length;
   }
 }
 //Test
