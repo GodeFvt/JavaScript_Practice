@@ -11,3 +11,6 @@ nums.sort((num1, num2) => num1 - num2) //[-6, -5, -1,  0, 7,  8,  9, 77] ascendi
 console.log(nums)
 nums.sort((num1, num2) => num2 - num1) //[ 77,  9,  8,  7, 0, -1, -5, -6 ]descending number sorting
 console.log(nums)
+
+
+
