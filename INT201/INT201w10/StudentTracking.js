@@ -26,6 +26,26 @@ const students = [
   },
 ];
 
+function getAttendanceRate(student) {
+  return ((student.attendance.filter((attendance) => attendance === true).length / student.attendance.length ) * 100);
+}
+function getAvgScore(student) {
+  return student.testScores.reduce((a, b) => a + b, 0) / student.testScores.length;
+}
+function underPerformStudents(students){
+  const result = [];
+  for (const student of students) {
+    const rate = getAttendanceRate(student);
+    const score = getAvgScore(student); 
+    if(rate < 80 && score < 70 ){
+      result.push({name:student.name, attendance:rate, testScores:score})
+    }
+  }
+  return result
+}
+console.log(underPerformStudents(students));
+
+
 // function getAttendanceRate(student) {
 //   const result = [];
 //   for (const element of student) {
@@ -48,22 +68,3 @@ const students = [
 
 // console.log(getAttendanceRate(students))
 // console.log(getAvgScore(students))
-
-function getAttendanceRate(student) {
-  return ((student.attendance.filter((attendance) => attendance === true).length / 5 ) * 100);
-}
-function getAvgScore(student) {
-  return student.testScores.reduce((a, b) => a + b, 0) / 5;
-}
-function underPerformStudents(students){
-  const result = [];
-  for (const student of students) {
-    const rate = getAttendanceRate(student);
-    const score = getAvgScore(student); 
-    if(rate < 80 || score < 70 ){
-      result.push({name:student.name,attendance:rate,testScores:score})
-    }
-  }
-  return result
-}
-console.log(underPerformStudents(students));
