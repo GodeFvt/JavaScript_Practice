@@ -1,7 +1,6 @@
 class Todo {
-  constructor(description) {
-    let count = 0;
-    this.id = count++;
+  constructor(id,description) {
+    this.id = id;
     this.description = description;
   }
   getTodo() {
@@ -11,26 +10,4 @@ class Todo {
     this.description = newDescription;
   }
 }
-
-function TodoManagement() {
-  const toDos = [];
-  function addTodo(desc) {
-    toDos.push(new Todo(desc));
-  }
-  function findTodo(searchId) {
-    return toDos.find((element) => element.id === searchId);
-  }
-  function findIndexTodo(searchId) {
-    return toDos.findIndex((element) => element.id === searchId);
-  }
-  function removeTodo(removeId) {
-    const index = findIndexTodo(removeId);
-    if (index > -1) {
-      toDos.splice(index, 1);
-    }
-    return toDos;
-  }
-  function getToDos(){
-    return toDos
-  }
-}
+module.exports = Todo
