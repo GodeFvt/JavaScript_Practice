@@ -14,14 +14,12 @@ function ProductManagement() {
   }
 
   function searchByPriceRange(minPrice, maxPrice) {
-    return products.filter(
-      (product) => product.price >= minPrice && product.price <= maxPrice);
+    return products.filter((product) => product.price >= minPrice && product.price <= maxPrice);
   }
 
   function removeAll() {
     products = [];
   }
-
   return {
     removeAll,
     searchByName,
