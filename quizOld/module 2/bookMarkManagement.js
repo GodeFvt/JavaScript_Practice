@@ -1,11 +1,7 @@
 const { template } = require("@babel/core");
 class BookMark {
-  constructor(isbn, totalPages) {
-    if (totalPages === undefined || totalPages === null) {
-      this.totalPages = 0;
-    }else{
-      this.totalPages = totalPages;
-    }
+  constructor(isbn, totalPages =0) {
+    this.totalPages = totalPages;
     this.isbn = isbn;
     this.bookMarks = [];
   }
