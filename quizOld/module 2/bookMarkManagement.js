@@ -1,17 +1,15 @@
 const { template } = require("@babel/core");
 class BookMark {
-  constructor(isbn, totalPages =0) {
+  constructor(isbn, totalPages = 0) {
     this.totalPages = totalPages;
     this.isbn = isbn;
     this.bookMarks = [];
   }
   addBookMark(pageNumber) {
-    if (pageNumber < 1 || pageNumber > this.totalPages) {
-      return this.bookMarks.length;
-    } else {
+    if (pageNumber >= 1 && pageNumber <= this.totalPages) {
       this.bookMarks.push(pageNumber);
-      return this.bookMarks.length;
     }
+    return this.bookMarks.length;
   }
   removeBookMark(pageNumber) {
     let indexPagerMove = this.bookMarks.findIndex((el) => el === pageNumber);
@@ -23,20 +21,20 @@ class BookMark {
     }
     return pageNumber;
   }
-  goToFirstBookMark(){
+  goToFirstBookMark() {
     if (this.bookMarks.length === 0) {
       return undefined;
     }
-    return this.bookMarks[0]
+    return this.bookMarks[0];
   }
-  goToLastBookMark(){
+  goToLastBookMark() {
     if (this.bookMarks.length === 0) {
       return undefined;
     }
-    return this.bookMarks[this.bookMarks.length -1 ]
+    return this.bookMarks[this.bookMarks.length - 1];
   }
-  getBookMarks(){
-    return this.bookMarks
+  getBookMarks() {
+    return this.bookMarks;
   }
 }
 
