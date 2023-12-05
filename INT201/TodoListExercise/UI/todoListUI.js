@@ -1,3 +1,4 @@
+
 function showTodoItem(newId, newDescription) {
   let listToDo = document.getElementById("listTodo");
   let newTodoDiv = document.createElement("div");
@@ -19,8 +20,21 @@ function showTodoItem(newId, newDescription) {
   listToDo.appendChild(newTodoDiv);
 }
 
-function showNumberOfDone(numberOfDone) {}
+function showNumberOfDone(numberOfDone) {
+  let doneButton = document.getElementById("done");
+  doneButton.textContent = "Number of Done: "+ numberOfDone;
+}
 
-function showNumberOfNotDone(numberOfNotDone) {}
-export { showTodoItem, showNumberOfDone, showNumberOfNotDone }
-//module.exports = { showTodoItem, showNumberOfDone, showNumberOfNotDone };
+function showNumberOfNotDone(numberOfNotDone) {
+  let notDoneButton = document.getElementById("notDone");
+  notDoneButton.textContent = "Number of Not Done: "+ numberOfNotDone;
+}
+
+function removeTodoItem(removeId) {
+  let listToDo = document.getElementById("listTodo");
+  let removeTodo = document.getElementById(removeId);
+  listToDo.removeChild(removeTodo);
+ 
+}
+export { showTodoItem, showNumberOfDone, showNumberOfNotDone,removeTodoItem };
+

@@ -1,17 +1,18 @@
 //const Todo = require("./todo");
-import { Todo } from './todo.js'
+import { Todo } from "./todo.js";
+
 function todoManagement() {
   let todos = [];
   function addTodo(desc) {
-    let toDo = new Todo(undefined, desc);
+    const toDo = new Todo(undefined, desc);
     todos.push(toDo);
     return toDo.id;
   }
   function findTodo(searchId) {
-    return todos.filter((e) => e.getTodo().id === searchId).getTodo();
+    return todos.find((e) => e.id === searchId);
   }
   function findIndexTodo(searchId) {
-    return todos.findIndex((e) => e.getTodo().id === searchId).getTodo();
+    return todos.findIndex((e) => e.id === searchId);
   }
   function removeTodo(removeId) {
     const toDoInDex = findIndexTodo(removeId);
@@ -31,6 +32,9 @@ function todoManagement() {
   function clearTodo() {
     todos = [];
   }
+  function setItemToDone(doneId) {
+    findTodo(doneId).setDone(true);
+  }
   return {
     addTodo,
     findTodo,
@@ -40,8 +44,9 @@ function todoManagement() {
     getNumberOfDone,
     getNumberOfNotDone,
     clearTodo,
+    setItemToDone,
   };
 }
 
 //module.exports = TodoList();
-export { todoManagement }
+export { todoManagement };
