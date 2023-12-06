@@ -24,16 +24,22 @@ function todoManagement() {
     return todos;
   }
   function getNumberOfDone() {
-    return todos.filter((e) => e.getTodo().done === true).length;
+    return todos.filter((e) => e.done === true).length;
   }
   function getNumberOfNotDone() {
-    return todos.filter((e) => e.getTodo().done === false).length;
+    return todos.filter((e) => e.done === false).length;
   }
   function clearTodo() {
     todos = [];
   }
   function setItemToDone(doneId) {
     findTodo(doneId).setDone(true);
+  }
+  function loadTodos(userTodos) {
+    userTodos.forEach((todo) => {
+      const toDo = new Todo(todo.id, todo.description, todo.done);
+      todos.push(toDo);
+    })
   }
   return {
     addTodo,
@@ -45,6 +51,7 @@ function todoManagement() {
     getNumberOfNotDone,
     clearTodo,
     setItemToDone,
+    loadTodos,
   };
 }
 
