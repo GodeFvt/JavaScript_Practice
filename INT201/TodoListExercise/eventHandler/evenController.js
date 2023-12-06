@@ -9,9 +9,7 @@ import { todoManagement } from "../lib/todoManagement.js";
 let todoManagements = todoManagement();
 
 function addTodoHandler() {
-  const inputToDo = document
-    .getElementById("addTodo")
-    .querySelector("input").value;
+  const inputToDo = document.getElementById("addTodo").querySelector("input").value;
   if (inputToDo !== "") {
     const newToDo = todoManagements.addTodo(inputToDo);
     showTodoItem(newToDo, inputToDo);
