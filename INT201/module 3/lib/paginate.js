@@ -16,5 +16,5 @@ function getTotalPages(allItems, rowsPerPage) {
     return 1
   return Math.ceil(allItems.length / rowsPerPage)
 }
-// export { getItemsOfCurrentPage, getTotalPages }
+ //export { getItemsOfCurrentPage, getTotalPages }
 module.exports = { getItemsOfCurrentPage, getTotalPages }

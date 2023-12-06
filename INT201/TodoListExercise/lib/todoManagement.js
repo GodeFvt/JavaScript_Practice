@@ -1,4 +1,4 @@
-//const Todo = require("./todo");
+//const Todo = require("./todo.js");
 import { Todo } from "./todo.js";
 
 function todoManagement() {
@@ -55,5 +55,5 @@ function todoManagement() {
   };
 }
 
-//module.exports = TodoList();
+//module.exports = todoManagement();
 export { todoManagement };
