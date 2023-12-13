@@ -49,7 +49,7 @@ function loadHandler() {
   const addBottom = document.getElementById("addBtn");
   addBottom.addEventListener("click", addTodoHandler);
 
-  if (yourTodos?.length !== 0 || yourTodos !== null || yourTodos !== undefined) {
+  if (yourTodos?.length !== 0 && yourTodos !== null && yourTodos !== undefined) {
     todoManagements.loadTodos(yourTodos);
     console.log(todoManagements.getTodos());
     todoManagements.getTodos().forEach((e) => {
@@ -75,7 +75,7 @@ function loadHandler() {
 function beforeUnloadHandler(event) {
   event.preventDefault();
   localStorage.setItem("todos", JSON.stringify(todoManagements.getTodos()));
-  clearTodo();
+  todoManagements.clearTodo();
 }
 
 export { addTodoHandler, loadHandler, beforeUnloadHandler };

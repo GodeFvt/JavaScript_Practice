@@ -36,10 +36,11 @@ function todoManagement() {
     findTodo(doneId).setDone(true);
   }
   function loadTodos(userTodos) {
-    userTodos.forEach((todo) => {
-      const toDo = new Todo(todo.id, todo.description, todo.done);
-      todos.push(toDo);
-    })
+    todos = [...userTodos]
+    // userTodos.forEach((todo) => {
+    //   const toDo = new Todo(todo.id, todo.description, todo.done);
+    //   todos.push(toDo);
+    // })
   }
   return {
     addTodo,
