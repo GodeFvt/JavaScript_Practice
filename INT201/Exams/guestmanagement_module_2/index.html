@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest List</title>
+  </head>
+  <body>
+    <h1>Guest List</h1>
+
+    <div style="padding: 10px">
+      <!-- Part 1: Search Guest -->
+      <label for="search-input">Search Guest:</label>
+      <input type="text" id="search-input" />
+    </div>
+    <div style="padding: 10px">
+      <!-- Part 2: Input New Guest -->
+      <label for="firstname-input">First Name:</label>
+      <input type="text" id="firstname-input" />
+      <label for="lastname-input">Last Name:</label>
+      <input type="text" id="lastname-input" />
+      <button id="add-guest-btn">Add Guest</button>
+    </div>
+
+    <!-- Part 3: Display Area -->
+    <div
+      id="display-area"
+      style="
+        border-style: solid;
+        border-width: 1px;
+        padding: 15px;
+        line-height: 1.5;
+      "
+    >
+      <!-- Guest list will be displayed here -->
+    </div>
+
+    <script src="guestForm.js" type="module"></script>
+  </body>
+</html>
