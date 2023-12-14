@@ -1,4 +1,4 @@
-  //import { createGuestList } from './data/guestdata.js'
+//import { createGuestList } from './data/guestdata.js'
 const createGuestList = require('./data/guestdata.js')
 //65130500054 Phuttinan Phaksawaeng
 const guestList = createGuestList()
@@ -60,11 +60,11 @@ function guestForm() {
     const firstnameBox = document.getElementById("firstname-input") 
     const lastnameBox = document.getElementById("lastname-input")
     if(firstnameBox.value?.length !== 0 && lastnameBox.value?.length !== 0){
-      guests.addNewGuest(firstnameBox.value,lastnameBox.value)
+      const newGuest = guests.addNewGuest(firstnameBox.value,lastnameBox.value)
       firstnameBox.value = ""
       lastnameBox.value = ""
+      displayGuest(newGuest[newGuest.length - 1])
     }
-    displayGuests(guests.getAllGuests())
   }
 
   // 6. Function to remove a guest
