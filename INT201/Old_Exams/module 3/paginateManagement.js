@@ -1,16 +1,20 @@
 // const { template } = require('@babel/core')
-// import { getItemsOfCurrentPage, getTotalPages } from './lib/paginate.js'
-// import { products } from './data/products.js'
+import { getItemsOfCurrentPage, getTotalPages } from "./lib/paginate.js";
+import { products } from "./data/products.js";
 
-const { getItemsOfCurrentPage, getTotalPages } = require("./lib/paginate.js");
-const products = require("./data/products.js");
+// const { getItemsOfCurrentPage, getTotalPages } = require("./lib/paginate.js");
+// const products = require("./data/products.js");
 
 function paginateManagement(items, rows) {
   const rowsPerPage = rows;
   const products = items;
 
   const showItemsOfCurrentPage = (currentPageNumber) => {
-    const itemsOfCurrentPage = getItemsOfCurrentPage(products, currentPageNumber, rowsPerPage);
+    const itemsOfCurrentPage = getItemsOfCurrentPage(
+      products,
+      currentPageNumber,
+      rowsPerPage
+    );
     const ulElement = document.getElementById("products");
 
     itemsOfCurrentPage.forEach((item) => {
@@ -41,7 +45,7 @@ function paginateManagement(items, rows) {
     }
 
     buttons.forEach((button) => {
-      button.addEventListener("click", pageHandler); 
+      button.addEventListener("click", pageHandler);
     });
   };
 
@@ -52,7 +56,7 @@ function paginateManagement(items, rows) {
     for (let i = 1; i <= totalPages; i++) {
       const button = document.createElement("button");
       button.textContent = i;
-      button.setAttribute('id', i);
+      button.setAttribute("id", i);
       divPagination.appendChild(button);
     }
   };
@@ -62,8 +66,8 @@ function paginateManagement(items, rows) {
     pageHandler,
   };
 }
-module.exports = paginateManagement;
-// export { paginateManagement }
-// const { showPageNumbers, pageHandler } = paginateManagement(products, 10)
-// showPageNumbers()
-// pageHandler()
+// module.exports = paginateManagement;
+export { paginateManagement };
+ const { showPageNumbers, pageHandler } = paginateManagement(products, 10)
+showPageNumbers();
+pageHandler();

@@ -283,210 +283,209 @@
       }
     ]
   },
-  [
-    {
-      "ID": 12,
-      "section": 2,
-      "groupName": "DaiItsara",
-      "repo": "https://github.com/fluffyhugger/PROJECT1-SEC-2-DaiItsara.git",
-      "members": [
-        {
-          "studentId": 65130500079,
-          "studentName": "นายศิรกาญ กาญจนวิลาสกุล"
-        },
-        {
-          "studentId": 65130500085,
-          "studentName": "นายสิรภพ วุฒิเทียร"
-        },
-        {
-          "studentId": 65130500091,
-          "studentName": "นายอิสมัต บุญมาเลิศ"
-        },
-        {
-          "studentId": 65130500107,
-          "studentName": "นางสาวนิศารัตน์ อุ่นเรือนงาม"
-        },
-        {
-          "studentId": 65130500122,
-          "studentName": "นายตรีภูมิ งามศิริสมสุล"
-        }
-      ]
-    },
-    {
-      "ID": 13,
-      "section": 2,
-      "groupName": "LANDEKLEN",
-      "repo": "https://github.com/inrita/PROJECT1-SEC-2-LANDEKLEN.git",
-      "members": [
-        {
-          "studentId": 65130500077,
-          "studentName": "นายศรัณยู สุโพธิ์ไขย์"
-        },
-        {
-          "studentId": 65130500088,
-          "studentName": "นายอรินทร์ สุดากิจจาทร"
-        },
-        {
-          "studentId": 65130500090,
-          "studentName": "นางสาวอินทร์ริตา วราจิรวิโรจน์"
-        },
-        {
-          "studentId": 65130500102,
-          "studentName": "นายณัฐดนัย เทศปัญ"
-        }
-      ]
-    },
-    {
-      "ID": 14,
-      "section": 2,
-      "groupName": "Point-of-Vue-INT203",
-      "repo": "https://github.com/6MA-606/Point-of-Vue-INT203.git",
-      "members": [
-        {
-          "studentId": 65130500080,
-          "studentName": "นางสาวศิริวรรณ โห้สารี"
-        },
-        {
-          "studentId": 65130500084,
-          "studentName": "นายสิทธา มานิตยกุล"
-        },
-        {
-          "studentId": 65130500089,
-          "studentName": "นายอัครวิทย์ สิทธิประการ"
-        },
-        {
-          "studentId": 65130500108,
-          "studentName": "นายบุณยกร พรสมบัติไพบูลย์"
-        },
-        {
-          "studentId": 65130500114,
-          "studentName": "นายเมธัส ดำรงค์มงคลกุล"
-        }
-      ]
-    },
-    {
-      "ID": 15,
-      "section": 2,
-      "groupName": "Work-Life-No-Balance",
-      "repo": "https://github.com/realFK98/PROJECT1-SEC-2-Work-Life-No-Balance.git",
-      "members": [
-        {
-          "studentId": 65130500069,
-          "studentName": "นายวงศธร ตั้งชูเกียรติกุล"
-        },
-        {
-          "studentId": 65130500075,
-          "studentName": "นายวิชิระ มาตราคำภา"
-        },
-        {
-          "studentId": 65130500092,
-          "studentName": "นายกฤตภาส จารุบูรณศักดิ์"
-        },
-        {
-          "studentId": 65130500098,
-          "studentName": "นายชวินธร วัฒนาเลิศสกุล"
-        },
-        {
-          "studentId": 65130500119,
-          "studentName": "นายศิรภัทร ศิลสว่าง"
-        }
-      ]
-    },
-    {
-      "ID": 16,
-      "section": 1,
-      "groupName": "VueView",
-      "repo": "https://github.com/Niraphan/PROJECT1-SEC-1-VueView.git",
-      "members": [
-        {
-          "studentId": 65130500005,
-          "studentName": "นายกันดิศ ขาวมีศรี"
-        },
-        {
-          "studentId": 65130500006,
-          "studentName": "นายกันตพงศ์ พลมณี"
-        },
-        {
-          "studentId": 65130500039,
-          "studentName": "นายนิรพันธ์ ดวงใจรักเกษม"
-        },
-        {
-          "studentId": 65130500040,
-          "studentName": "นางสาวเบญญาพร แสงเขียว"
-        },
-        {
-          "studentId": 65130500045,
-          "studentName": "นายพงศพัศ เจริญจรัสกุล"
-        }
-      ]
-    },
-    {
-      "ID": 17,
-      "section": 1,
-      "groupName": "PasswordGenerator",
-      "repo": "https://github.com/Sitthata/PROJECT1-SEC-1-PasswordGenerator.git",
-      "members": [
-        {
-          "studentId": 65130500013,
-          "studentName": "นายชนกานต์ เครือหงษ์"
-        },
-        {
-          "studentId": 65130500020,
-          "studentName": "นายณัฐภัทร เลิศศิริพงศ์พันธ์"
-        },
-        {
-          "studentId": 65130500047,
-          "studentName": "นายพรชัย แก้วกระบิล"
-        },
-        {
-          "studentId": 65130500057,
-          "studentName": "นายภัทรดนัย ศรีชน"
-        }
-      ]
-    },
-    {
-      "ID": 18,
-      "section": 1,
-      "groupName": "pic-word",
-      "repo": "https://github.com/asmayn/PROJECT1-SEC-1-pic-word.git",
-      "members": [
-        {
-          "studentId": 63130500019,
-          "studentName": "นายชาญ ทองเจิม"
-        },
-        {
-          "studentId": 63130500111,
-          "studentName": "นายศุภวิชญ์ วิริยะภูวดล"
-        },
-        {
-          "studentId": 63130500136,
-          "studentName": "นางสาวอัสมา ยามุนี"
-        }
-      ]
-    },
-    {
-      "ID": 19,
-      "section": 1,
-      "groupName": "XiaoYiLobsterSlayerTeam",
-      "repo": "https://github.com/Tinnapop13/PROJECT1-SEC-1-XiaoYiLobsterSlayerTeam.git",
-      "members": [
-        {
-          "studentId": 65130500022,
-          "studentName": "นายณัฐศรัณย์ แซ่อึ่ง"
-        },
-        {
-          "studentId": 65130500023,
-          "studentName": "นายติณณภพ เทียนบาง"
-        },
-        {
-          "studentId": 65130500041,
-          "studentName": "นายปภังกร กิจสกุลรัตน์"
-        },
-        {
-          "studentId": 65130500046,
-          "studentName": "นายพชรดล แตงพลับ"
-        }
-      ]
-    }
-  ]
+
+  {
+    "ID": 12,
+    "section": 2,
+    "groupName": "DaiItsara",
+    "repo": "https://github.com/fluffyhugger/PROJECT1-SEC-2-DaiItsara.git",
+    "members": [
+      {
+        "studentId": 65130500079,
+        "studentName": "นายศิรกาญ กาญจนวิลาสกุล"
+      },
+      {
+        "studentId": 65130500085,
+        "studentName": "นายสิรภพ วุฒิเทียร"
+      },
+      {
+        "studentId": 65130500091,
+        "studentName": "นายอิสมัต บุญมาเลิศ"
+      },
+      {
+        "studentId": 65130500107,
+        "studentName": "นางสาวนิศารัตน์ อุ่นเรือนงาม"
+      },
+      {
+        "studentId": 65130500122,
+        "studentName": "นายตรีภูมิ งามศิริสมสุล"
+      }
+    ]
+  },
+  {
+    "ID": 13,
+    "section": 2,
+    "groupName": "LANDEKLEN",
+    "repo": "https://github.com/inrita/PROJECT1-SEC-2-LANDEKLEN.git",
+    "members": [
+      {
+        "studentId": 65130500077,
+        "studentName": "นายศรัณยู สุโพธิ์ไขย์"
+      },
+      {
+        "studentId": 65130500088,
+        "studentName": "นายอรินทร์ สุดากิจจาทร"
+      },
+      {
+        "studentId": 65130500090,
+        "studentName": "นางสาวอินทร์ริตา วราจิรวิโรจน์"
+      },
+      {
+        "studentId": 65130500102,
+        "studentName": "นายณัฐดนัย เทศปัญ"
+      }
+    ]
+  },
+  {
+    "ID": 14,
+    "section": 2,
+    "groupName": "Point-of-Vue-INT203",
+    "repo": "https://github.com/6MA-606/Point-of-Vue-INT203.git",
+    "members": [
+      {
+        "studentId": 65130500080,
+        "studentName": "นางสาวศิริวรรณ โห้สารี"
+      },
+      {
+        "studentId": 65130500084,
+        "studentName": "นายสิทธา มานิตยกุล"
+      },
+      {
+        "studentId": 65130500089,
+        "studentName": "นายอัครวิทย์ สิทธิประการ"
+      },
+      {
+        "studentId": 65130500108,
+        "studentName": "นายบุณยกร พรสมบัติไพบูลย์"
+      },
+      {
+        "studentId": 65130500114,
+        "studentName": "นายเมธัส ดำรงค์มงคลกุล"
+      }
+    ]
+  },
+  {
+    "ID": 15,
+    "section": 2,
+    "groupName": "Work-Life-No-Balance",
+    "repo": "https://github.com/realFK98/PROJECT1-SEC-2-Work-Life-No-Balance.git",
+    "members": [
+      {
+        "studentId": 65130500069,
+        "studentName": "นายวงศธร ตั้งชูเกียรติกุล"
+      },
+      {
+        "studentId": 65130500075,
+        "studentName": "นายวิชิระ มาตราคำภา"
+      },
+      {
+        "studentId": 65130500092,
+        "studentName": "นายกฤตภาส จารุบูรณศักดิ์"
+      },
+      {
+        "studentId": 65130500098,
+        "studentName": "นายชวินธร วัฒนาเลิศสกุล"
+      },
+      {
+        "studentId": 65130500119,
+        "studentName": "นายศิรภัทร ศิลสว่าง"
+      }
+    ]
+  },
+  {
+    "ID": 16,
+    "section": 1,
+    "groupName": "VueView",
+    "repo": "https://github.com/Niraphan/PROJECT1-SEC-1-VueView.git",
+    "members": [
+      {
+        "studentId": 65130500005,
+        "studentName": "นายกันดิศ ขาวมีศรี"
+      },
+      {
+        "studentId": 65130500006,
+        "studentName": "นายกันตพงศ์ พลมณี"
+      },
+      {
+        "studentId": 65130500039,
+        "studentName": "นายนิรพันธ์ ดวงใจรักเกษม"
+      },
+      {
+        "studentId": 65130500040,
+        "studentName": "นางสาวเบญญาพร แสงเขียว"
+      },
+      {
+        "studentId": 65130500045,
+        "studentName": "นายพงศพัศ เจริญจรัสกุล"
+      }
+    ]
+  },
+  {
+    "ID": 17,
+    "section": 1,
+    "groupName": "PasswordGenerator",
+    "repo": "https://github.com/Sitthata/PROJECT1-SEC-1-PasswordGenerator.git",
+    "members": [
+      {
+        "studentId": 65130500013,
+        "studentName": "นายชนกานต์ เครือหงษ์"
+      },
+      {
+        "studentId": 65130500020,
+        "studentName": "นายณัฐภัทร เลิศศิริพงศ์พันธ์"
+      },
+      {
+        "studentId": 65130500047,
+        "studentName": "นายพรชัย แก้วกระบิล"
+      },
+      {
+        "studentId": 65130500057,
+        "studentName": "นายภัทรดนัย ศรีชน"
+      }
+    ]
+  },
+  {
+    "ID": 18,
+    "section": 1,
+    "groupName": "pic-word",
+    "repo": "https://github.com/asmayn/PROJECT1-SEC-1-pic-word.git",
+    "members": [
+      {
+        "studentId": 63130500019,
+        "studentName": "นายชาญ ทองเจิม"
+      },
+      {
+        "studentId": 63130500111,
+        "studentName": "นายศุภวิชญ์ วิริยะภูวดล"
+      },
+      {
+        "studentId": 63130500136,
+        "studentName": "นางสาวอัสมา ยามุนี"
+      }
+    ]
+  },
+  {
+    "ID": 19,
+    "section": 1,
+    "groupName": "XiaoYiLobsterSlayerTeam",
+    "repo": "https://github.com/Tinnapop13/PROJECT1-SEC-1-XiaoYiLobsterSlayerTeam.git",
+    "members": [
+      {
+        "studentId": 65130500022,
+        "studentName": "นายณัฐศรัณย์ แซ่อึ่ง"
+      },
+      {
+        "studentId": 65130500023,
+        "studentName": "นายติณณภพ เทียนบาง"
+      },
+      {
+        "studentId": 65130500041,
+        "studentName": "นายปภังกร กิจสกุลรัตน์"
+      },
+      {
+        "studentId": 65130500046,
+        "studentName": "นายพชรดล แตงพลับ"
+      }
+    ]
+  }
 ]
