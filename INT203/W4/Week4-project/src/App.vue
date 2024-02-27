@@ -1,87 +1,129 @@
 <script setup>
-import { ref, computed } from 'vue'
-import SortIcon from './components/icons/Sort.vue'
-import SearchIcon from './components/icons/SearchIcon.vue'
-import groups from '../data/groups.json'
+import { ref, computed, watch } from "vue";
+import SortIcon from "./components/icons/Sort.vue";
+import SearchIcon from "./components/icons/SearchIcon.vue";
+import groups from "../data/groups.json";
 import {
   sortBySection,
   getLastPage,
   getRowsInPage,
-  searchGroupWorks
-} from './libs/utilities.js'
-const workGroups = ref(getRowsInPage(groups, 10, 1))
+  searchGroupWorks,
+} from "./libs/utilities.js";
+const yourColor = ref("red");
+const yourFontSize = ref("16px");
+const rows = ref(10);
+const workGroups = ref(getRowsInPage(groups, rows.value, 1));
 const newGroup = ref({
-  section: '',
-  groupName: '',
-  repo: '',
-  members: []
-})
-const numOfMembers = ref(0)
+  section: "",
+  groupName: "",
+  repo: "",
+  members: [],
+});
+
+watch(rows, () => {
+  getRows(currentPage.value);
+});
+
+const numOfMembers = ref(0);
 const saveNewGroup = () => {
-  console.log(newGroup.value)
-}
+  console.log(newGroup.value);
+};
 const addNewMember = () => {
-  newGroup.value.members = []
+  newGroup.value.members = [];
   for (let index = 0; index < numOfMembers.value; index++) {
     newGroup.value.members.push({
       projectCo: false,
-      studentId: '',
-      studentName: ''
-    })
+      studentId: "",
+      studentName: "",
+    });
   }
-}
-const addMode = ref(false)
+};
+const addMode = ref(false);
 
-const currentPage = ref(1)
+const currentPage = ref(1);
 
 const getRows = (n) => {
-  currentPage.value = n
-  workGroups.value = getRowsInPage(groups, 10, n)
-}
+  currentPage.value = n;
+  workGroups.value = getRowsInPage(groups, rows.value, n);
+};
 
-const searchKeywords = ref('')
+const searchKeywords = ref("");
 // const search = () => {
 //   console.log('search...')
 //   searchGroupWorks(workGroups.value, searchKeywords.value)
 // }
 const filteredGroupWorks = computed(() => {
-  console.log('computed working...')
-  return searchGroupWorks(workGroups.value, searchKeywords.value)
-})
-</script>
+  console.log("computed working...");
+  return searchGroupWorks(workGroups.value, searchKeywords.value);
+});
 
+const isPlaying = ref(true);
+const player = ref("");
+
+const musicControl = () => {
+  isPlaying.value = !isPlaying.value;
+  if (isPlaying.value) player.value.play();
+  else player.value.pause();
+};
+</script>
 <template>
-  <div class="w-full">
+  <div class="specialText w-full">
     <header>
       <section
-        class="flex items-center p-2 bg-gradient-to-r from-violet-500 to-fuchsia-500"
+        class="flex items-center justify-between p-2 bg-gradient-to-r from-violet-500 to-fuchsia-500"
       >
-        <img src="./assets/vue-icon.png" class="h-14" />
+        <div class="flex items-center">
+          <img src="./assets/vue-icon.png" class="h-14" />
+          <div>
+            <h1 class="text-white text-4xl">Creative Projects</h1>
+            <h2 class="italic text-indigo-200 text-xl">Play and Learn</h2>
+          </div>
+        </div>
         <div>
-          <h1 class="text-white text-4xl">Creative Projects</h1>
-          <h2 class="italic text-indigo-200 text-xl">Play and Learn</h2>
+          <audio controls class="hidden" ref="player">
+            <source src="./assets/sample.mp3" type="audio/mp3" />
+          </audio>
         </div>
       </section>
     </header>
     <main class="p-5">
       <!-- toggle adding groupwork -->
       <section>
-        <div class="italic cursor-pointer text-purple-600 hover:text-cyan-500">
+        <div
+          class="flex italic cursor-pointer text-purple-600 hover:text-cyan-500 justify-between"
+        >
           <p v-on:click="addMode = true">Add New Group</p>
+          <div class="flex justify-end items-center">
+            Your color :
+            <input type="color" v-model="yourColor" />
+            Font size :
+            <input type="number" v-model="yourFontSize" />
+          </div>
         </div>
       </section>
 
-      <section class="flex justify-end pt-2">
-        <div
-          class="w-1/4 flex items-center gap-3 border border-gray-300 p-1 rounded-lg"
-        >
-          <SearchIcon />
+      <section class="flex-col justify-end pt-2">
+        <div class="flex justify-end items-center">
+          <p>Set number of row/page :</p>
           <input
-            class="outline-none"
+            class="border-gray-300 p-1 rounded-lg border w-1/12"
             type="text"
-            placeholder="type your keyword..."
-            v-model="searchKeywords"
+            placeholder=""
+            v-model.number="rows"
           />
+        </div>
+        <div class="flex justify-end items-center">
+          <div
+            class="w-1/4 flex items-center gap-3 border border-gray-300 p-1 rounded-lg"
+          >
+            <SearchIcon />
+            <input
+              class="outline-none"
+              type="text"
+              placeholder="type your keyword..."
+              v-model="searchKeywords"
+            />
+          </div>
         </div>
       </section>
       <!-- Modal Window -->
@@ -126,6 +168,7 @@ const filteredGroupWorks = computed(() => {
               />
               {{ numOfMembers }}
             </div>
+
             <div
               v-for="(member, index) in newGroup.members"
               :key="index"
@@ -175,8 +218,9 @@ const filteredGroupWorks = computed(() => {
           </div>
 
           <h3 class="col-span-2">Group Name</h3>
-          <h3 class="col-span-5">GitHub Repository</h3>
-          <h3 class="col-span-4">Members</h3>
+          <h3 class="col-span-3">GitHub Repository</h3>
+          <h3 class="col-span-3">Members</h3>
+          <h3 class="col-span-3">Link</h3>
         </div>
         <div
           v-for="(group, index) in filteredGroupWorks"
@@ -186,9 +230,9 @@ const filteredGroupWorks = computed(() => {
         >
           <p>{{ group.section }}</p>
           <p class="col-span-2">{{ group.groupName }}</p>
-          <p class="col-span-5">{{ group.repo }}</p>
+          <p class="col-span-3">{{ group.repo }}</p>
           <!-- <p class="col-span-4">{{group.members  }}</p> -->
-          <ul class="col-span-4 list-disc list-inside">
+          <ul class="col-span-3 list-disc list-inside">
             <!-- <li v-for="member in group.members">{{ member.studentId }} {{ member.studentName }}</li> -->
             <li
               v-for="{ studentId, studentName } in group.members"
@@ -197,6 +241,10 @@ const filteredGroupWorks = computed(() => {
               {{ `${studentId}  ${studentName}` }}
             </li>
           </ul>
+          <img
+            :src="`/img/groupImages/pic-${++index}.jpg`"
+            class="col-span-3 w-[30%] h-[100%]"
+          />
         </div>
         <!-- Paginate -->
         <div class="flex justify-center gap-2">
@@ -215,4 +263,9 @@ const filteredGroupWorks = computed(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.specialText {
+  color: v-bind(yourColor);
+  font-size: v-bind(yourFontSize);
+}
+</style>
