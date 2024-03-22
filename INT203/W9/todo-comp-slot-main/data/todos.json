@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category": "home",
+    "description": "Buy groceries"
+  },
+  {
+    "id": 2,
+    "category": "work",
+    "description": "Finish project report"
+  },
+  {
+    "id": 3,
+    "category": "home",
+    "description": "Clean the house"
+  },
+  {
+    "id": 4,
+    "category": "work",
+    "description": "Attend meeting at 2 PM"
+  },
+  {
+    "id": 5,
+    "category": "home",
+    "description": "Water the plants"
+  },
+  {
+    "id": 6,
+    "category": "work",
+    "description": "Reply to emails"
+  },
+  {
+    "id": 7,
+    "category": "home",
+    "description": "Prepare dinner"
+  },
+  {
+    "id": 8,
+    "category": "work",
+    "description": "Code review"
+  },
+  {
+    "id": 9,
+    "category": "home",
+    "description": "Exercise for 30 minutes"
+  },
+  {
+    "id": 10,
+    "category": "work",
+    "description": "Submit quarterly report"
+  }
+]
